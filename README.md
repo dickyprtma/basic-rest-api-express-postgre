@@ -47,6 +47,26 @@ npm install cors
 npm install prisma
 ```
 
+## 8. Menginstall Nodemon (tidak wajib)
+ini tools pendukung yang akan secara otomatis merestart saat terjadi perubahan (kayak hotreload atau liveserver)
+```
+npm install --save-dev nodemon
+```
+catatan : --save-dev untuk menginstall dependencies di lingkungan development saja, bisa cek di package.json nodemon akan berada di bagian dev dependencies.
+```
+"devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+```
+nah kalau mau nerapin auto restart kalau ada perubahan ini runnya gak lagi pake
+```
+node .
+```
+tetapi
+```
+nodemon .
+```
+
 # REFERENSI
 Sumber : Channel Youtube VoidFnc
 https://www.youtube.com/watch?v=5YUTB3WGxWs&t=5616s
