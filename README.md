@@ -26,6 +26,20 @@ Agar folder dengan ukuran besar seperti `node_modules/` dan file dengan informas
 ## 3. Membuat .env dan .env.development`
 `.env` untuk konfigurasi db, sedangkan `.env.development` untuk membuat dokumentasi api (bisa dibuka di postman)
 
+## 4. Menginstall Express JS
+```
+npm install express
+```
+
+## 5. Menginstall CORS
+```
+npm install cors
+```
+
+## 6. Menginstall ORM Prisma
+```
+npm install prisma
+```
 
 # REFERENSI
 Sumber : Channel Youtube VoidFnc
