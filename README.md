@@ -26,17 +26,20 @@ Agar folder dengan ukuran besar seperti `node_modules/` dan file dengan informas
 ## 3. Membuat .env dan .env.development`
 `.env` untuk konfigurasi db, sedangkan `.env.development` untuk membuat dokumentasi api (bisa dibuka di postman)
 
-## 4. Menginstall Express JS
+## 4. Menginstall dotenv
+agar bisa mengakses variabel di file `.env`
+
+## 5. Menginstall Express JS
 ```
 npm install express
 ```
 
-## 5. Menginstall CORS
+## 6. Menginstall CORS
 ```
 npm install cors
 ```
 
-## 6. Menginstall ORM Prisma
+## 7. Menginstall ORM Prisma
 ```
 npm install prisma
 ```
