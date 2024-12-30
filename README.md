@@ -15,6 +15,8 @@ Catatan singkat tentang docker
 - `-p xxxx:xxxx` (port)
 - `-d nama-image`
 
+* tambahan : untuk mengecek apakah postgres sudah run atau belum, bisa menggunakan bantuan aplikasi dbeaver
+
 ## 1. Inisilisasi NPM
 ```npm init```
 
@@ -25,6 +27,7 @@ Agar folder dengan ukuran besar seperti `node_modules/` dan file dengan informas
 `.env` untuk konfigurasi db, sedangkan `.env.development` untuk membuat dokumentasi api (bisa dibuka di postman)
 
 
+# REFERENSI
 Sumber : Channel Youtube VoidFnc
 https://www.youtube.com/watch?v=5YUTB3WGxWs&t=5616s
 
