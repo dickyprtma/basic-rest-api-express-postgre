@@ -5,6 +5,12 @@ const app = express()
 dotenv.config()
 
 const PORT = process.env.PORT
+
+app.get("/api", (req, res) => {
+    // kirim respon
+    res.send("server memberikan respon dari endpoint /api")
+})
+
 app.listen(PORT, () => {
     console.log(`Express API running in port : ${PORT}`)
 })

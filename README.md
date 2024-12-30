@@ -28,6 +28,9 @@ Agar folder dengan ukuran besar seperti `node_modules/` dan file dengan informas
 
 ## 4. Menginstall dotenv
 agar bisa mengakses variabel di file `.env`
+```
+npm install dotenv
+```
 
 ## 5. Menginstall Express JS
 ```
