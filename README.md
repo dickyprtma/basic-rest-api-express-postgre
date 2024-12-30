@@ -49,6 +49,12 @@ npm install prisma
 
 ## 8. Menginstall Nodemon (tidak wajib)
 ini tools pendukung yang akan secara otomatis merestart saat terjadi perubahan (kayak hotreload atau liveserver)
+sebelumnya install dulu secara global, maksudnya diinstall di system path.
+
+```
+npm install -g nodemon
+```
+selanjutnya bisa install di dependencies development
 ``` 
 npm install --save-dev nodemon
 ```
