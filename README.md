@@ -18,6 +18,13 @@ Catatan singkat tentang docker
 ## 1. Inisilisasi NPM
 ```npm init```
 
+## 2. Membuat file .gitignore
+Agar folder dengan ukuran besar seperti `node_modules/` dan file dengan informasi sensitif seperti .env tidak ikut terupload di repository remote github.
+
+## 3. Membuat .env dan .env.development`
+`.env` untuk konfigurasi db, sedangkan `.env.development` untuk membuat dokumentasi api (bisa dibuka di postman)
+
+
 Sumber : Channel Youtube VoidFnc
 https://www.youtube.com/watch?v=5YUTB3WGxWs&t=5616s
 
