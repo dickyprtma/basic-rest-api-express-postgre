@@ -3,6 +3,9 @@
 # SETUP
 1. ```npm init```
 
+# Catatan
+- Di tutorial ini mas agung run dbnya menggunakan docker
+
 Sumber : Channel Youtube VoidFnc
 https://www.youtube.com/watch?v=5YUTB3WGxWs&t=5616s
 
