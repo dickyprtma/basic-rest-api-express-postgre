@@ -23,6 +23,7 @@ app.get("/products", async (req, res) => {
     res.send(products)
 })
 
+// create product
 app.post('/products', async (req, res) => {
     // melalui metode request body
     const newProductData = req.body;
