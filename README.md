@@ -16,6 +16,8 @@ Catatan singkat tentang docker
 - `-d nama-image`
 
 * tambahan : untuk mengecek apakah postgres sudah run atau belum, bisa menggunakan bantuan aplikasi dbeaver
+  
+* catatan : proyek ini tidak secara penuh containerized dengan docker karena projek ini hanya membangun dan menjalankan container dari image postgre saja. jadi dockernya hanya untuk menjalankan postgrenya saja bukan dengan sekalian nodenya (nodenya menggunakan local machine)
 
 ## 1. Inisilisasi NPM
 ```npm init```
