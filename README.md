@@ -1,4 +1,5 @@
 # BASIC REST API (EXPRESS JS, PRISMA, POSTGRE)
+branch ini adalah penerapan layered architecture (service repository pattern)
 
 # SETUP
 ## 0. Setup Postgres dengan Docker
