@@ -66,15 +66,41 @@ app.listen(PORT, () => {
     console.log(`Express API running in port : ${PORT}`)
 })
 
+// edit pake put
 app.put("/products/:id", async (req, res) => {
     const productId = req.params.id
     const productData = req.body
 
     // validasi
     // komen kode ini untuk membuat fields opsional kembali
+    // tetapi sebenarnya update itu memperbaruhi semua data
     if (!(productData.image && productData.name && productData.description && productData.price)) {
         return res.status(400).send("some fields are missing")
     }
+
+    const product = await prisma.product.update({
+        where: {
+            id: parseInt(productId)
+        },
+        data: {
+            name: productData.name,
+            description: productData.description,
+            price: productData.price,
+            image: productData.image
+        }
+    })
+
+    res.send({
+        data: product,
+        message: "edit product berhasil"
+    })
+})
+
+// edit pake patch
+// hanya memperbaruhi data yang kita masukan di dalam params
+app.patch("/products/:id", async (req, res) => {
+    const productId = req.params.id
+    const productData = req.body
 
     const product = await prisma.product.update({
         where: {
