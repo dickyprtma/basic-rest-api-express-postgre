@@ -50,10 +50,10 @@ app.post('/products', async (req, res) => {
 // delete product
 app.delete("/products/:product_id", async (req, res) => {
     // mengambil request melalui query params (bagian dari url)
-    const id = req.params.product_id
+    const productId = req.params.product_id
     await prisma.product.delete({
         where: {
-            id: parseInt(id)
+            id: parseInt(productId)
         }
     })
 
@@ -64,4 +64,26 @@ app.delete("/products/:product_id", async (req, res) => {
 
 app.listen(PORT, () => {
     console.log(`Express API running in port : ${PORT}`)
+})
+
+app.put("/products/:id", async (req, res) => {
+    const productId = req.params.id
+    const productData = req.body
+
+    const product = await prisma.product.update({
+        where: {
+            id: parseInt(productId)
+        },
+        data: {
+            name: productData.name,
+            description: productData.description,
+            price: productData.price,
+            image: productData.image
+        }
+    })
+
+    res.send({
+        data: product,
+        message: "edit product berhasil"
+    })
 })
