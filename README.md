@@ -46,6 +46,12 @@ npm install cors
 ```
 npm install prisma
 ```
+Siapkan proyek Prisma ORM Anda dengan membuat templat file skema Prisma dengan perintah berikut:
+```
+npx prisma init
+```
+* jangan lupa install extension prisma di vscode.
+prisma by prisma.io : syntax highlighting, formatting, auto-completion, jump-to-definition and linting for .prisma files.
 
 ## 8. Menginstall Nodemon (tidak wajib)
 ini tools pendukung yang akan secara otomatis merestart saat terjadi perubahan (kayak hotreload atau liveserver)
