@@ -25,7 +25,7 @@ app.get("/products", async (req, res) => {
 
 // create product
 app.post('/products', async (req, res) => {
-    // melalui metode request body
+    // mengambil request melalui metode body
     const newProductData = req.body;
     const product = await prisma.product.create(
         {
@@ -45,6 +45,21 @@ app.post('/products', async (req, res) => {
 
     // kalau mau pakai status code
     // res.status(201).send("create product success") 
+})
+
+// delete product
+app.delete("/products/:product_id", async (req, res) => {
+    // mengambil request melalui query params (bagian dari url)
+    const id = req.params.product_id
+    await prisma.product.delete({
+        where: {
+            id: parseInt(id)
+        }
+    })
+
+    res.send({
+        messsage: "product has deleted successfully"
+    })
 })
 
 app.listen(PORT, () => {
