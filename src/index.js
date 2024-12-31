@@ -9,6 +9,9 @@ dotenv.config()
 
 const PORT = process.env.PORT
 
+// agar bisa parse json body (untuk create dsb)
+app.use(express.json())
+
 app.get("/api", (req, res) => {
     // kirim respon
     res.send("server memberikan respon dari endpoint /api ")
