@@ -41,7 +41,9 @@ app.post('/products', async (req, res) => {
         data: product,
         messsage: "create product success"
     })
-    // res.status(201).send("create product success") kalau mau pakai status code
+
+    // kalau mau pakai status code
+    // res.status(201).send("create product success") 
 })
 
 app.listen(PORT, () => {
