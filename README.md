@@ -50,6 +50,14 @@ Siapkan proyek Prisma ORM Anda dengan membuat templat file skema Prisma dengan p
 ```
 npx prisma init
 ```
+untuk push skema (biasanya untuk development pakai push, sedangkan untuk production pakai migration)
+```
+npx prisma db push
+```
+ada lagi tools dari prisma yang bisa membantu dalam mengembangkan api, namanya prisma studio, sebuah visual editor yang dikembangkan oleh prisma. bisa digunakan dengan menjalankan cl
+```
+npx prisma studio
+```
 * jangan lupa install extension prisma di vscode.
 prisma by prisma.io : syntax highlighting, formatting, auto-completion, jump-to-definition and linting for .prisma files.
 
