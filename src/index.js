@@ -23,6 +23,21 @@ app.get("/products", async (req, res) => {
     res.send(products)
 })
 
+// get single product
+app.get("/products/:product_id", async (req, res) => {
+    const productId = req.params.product_id
+    const product = await prisma.product.findUnique({
+        where: {
+            id: parseInt(productId)
+        }
+    })
+
+    if (!product) {
+        return res.status(400).send("Product not found")
+    }
+    res.send(product)
+})
+
 // create product
 app.post('/products', async (req, res) => {
     // mengambil request melalui metode body
